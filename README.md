@@ -1,5 +1,5 @@
 # CS50 Intro to Python 
-- [ ] Lesson 0
+- [x] Lesson 0
 - [ ] Lesson 1
 - [ ] Lesson 2
 - [ ] Lesson 3
