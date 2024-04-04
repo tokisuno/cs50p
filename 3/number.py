@@ -7,7 +7,7 @@ def get_int(prompt):
 
 
 def main():
-    x = get_int("What's x?: ") 
+    x = get_int("What's x?: ")
     print(f"x is {x}")
 
 
