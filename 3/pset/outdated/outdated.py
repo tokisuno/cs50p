@@ -57,13 +57,5 @@ def main():
             pass
 
 
-# Month always before date
-# Assuming MM DD YYYY:
-# Strip [0] & [2]
-#   Then strip [:-1]
-# If month in months or month <= 12:
-# If day in days is <= 31:
-# Print the ISO 8601 version
-
 if __name__ == "__main__":
     main()
