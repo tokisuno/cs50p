@@ -12,7 +12,36 @@ menu = {
 
 
 def main():
-    return
+    user_input = menu_item()
+    print(user_input)
+
+
+def menu_item():
+    total = 0
+    m = dict_tolower(menu)
+    while True:
+        try:
+            x = input("Item:").lower()
+            if x in m.keys():
+                total += m[x]
+                print(f"${total:.2f}")
+        except ValueError:
+            pass
+        except KeyError:
+            pass
+        except EOFError:
+            break
+
+
+def dict_tolower(i):
+    better = dict()
+    for k in i.keys():
+        if type(i[k]) is dict:
+            better[k.lower()] = dict_tolower(i[k])
+        else:
+            better[k.lower()] = i[k]
+    return better
+
 
 # User inputs item
 # Program in loop returns total of the items added together
